@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullMec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Menu-->
+    <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src="img/logo.png" alt="navbar-brand" width="200">
+            </a>            
+            <button class="navbar-toggler" 
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="Index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pagos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!--Login-->         
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <div id="id01" class="modal">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header alert-dark">
+                        <h5 class="modal-title">"Ingresa al Portal"</h5>                        
+                    </div>
+                    <div class="modal-body">
+                      <img src="img/login.jpg" class="img-fluid pb-md-2">
+                      <h6>  </h6>
+                      <form role="form">
+                        <div class="form-group">                         
+                          <label for="">
+                            Usuario:
+                          </label>
+                          <input type="text" class="form-control" id=""/>
+                        </div>
+                        <div class="form-group">                         
+                          <label for="">
+                            Password:
+                          </label>
+                          <input type="password" class="form-control" id=""/>
+                        </div>
+                      </form>                  
+                    </div>
+                    <div class="modal-footer alert-dark">
+                      <button type="submit">Ingresa</button>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recuerda me
+                      </label>
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Login-->
+        </div>
+    </nav>
+    <!-- Division-->
+     <div id="separator">
+        <div class="content"></div>
+    </div>
+    <!-- Informacion Carlos Gonzalez-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <br> <br>
+                <h1>Trabajos Realizados por Juan Pablo Vargas.</h1>
+                <br> <br>
+                
+            </div>
+            <div class="col-md-4">
+                <table class="table table-bordered">
+                <br>
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Falla</th>
+                            <th>Estado</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Automovil</td>
+                            <td>Aceite</td>
+                            <td>Reparado</td>
+                            <td>18/09/2020</td>                            
+                        </tr>
+                        <tr class="table-active">
+                            <td>Automovil</td>
+                            <td>Aceite</td>
+                            <td>Reparado</td>
+                            <td>18/09/2020</td>                            
+                        </tr>
+                        <tr class="table-success">
+                            <td>Automovil</td>
+                            <td>Aceite</td>
+                            <td>Reparado</td>
+                            <td>18/09/2020</td>                            
+                        </tr>
+                        <tr class="table-warning">
+                            <td>Automovil</td>
+                            <td>Aceite</td>
+                            <td>Reparado</td>
+                            <td>18/09/2020</td>                            
+                        </tr>
+                        <tr class="table-danger">
+                            <td>Automovil</td>
+                            <td>Aceite</td>
+                            <td>Reparado</td>
+                            <td>18/09/2020</td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <br> <br>
+                <center><img alt="" src="img/card02.png"/></center>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Division-->
+    <div id="separator">
+        <div class="content"></div>
+    </div>
+    
+    <!-- Footer-->
+    <div id="footer" class="p-0">
+        <div class="container-fluid">
+            <div class="row row-cols-md-2 justify-content-md-center">
+                <div class="col text-center"></div>
+            </div>
+            <div class="row justify-content-md-center py-5">
+                <div class="col text-center font-weight-light text-light">
+                 <p>Copyright © 2020 FullMec. Todos los derechos reservados.</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- Script-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+          {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>
