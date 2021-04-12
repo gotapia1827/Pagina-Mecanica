@@ -24,8 +24,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            
+            </button>           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
@@ -33,8 +32,14 @@
                 <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Pagos</a></li>
                 <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
-              </ul>                                              
-            </div>
+              </ul>
+              <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" />              
+              </form>
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                Buscar
+              </button>                                             
+            </div>    
             <!--Login-->         
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             <div id="id01" class="modal">
@@ -91,10 +96,10 @@
                         <input type="text" class="form-control" id=""/>
                       </div>
                       <div class="form-group">                         
-                        <label for="">
-                          Usuario:
+                        <label for="email">
+                          Email:
                         </label>
-                        <input type="text" class="form-control" id=""/>
+                        <input type="email" class="form-control" id=""/>
                       </div>
                       <div class="form-group">                         
                         <label for="">
@@ -117,9 +122,9 @@
                   </div>
                 </div>
               </div>
-            </div>                                
+            </div>                     
         </div>        
-    </nav>
+    </nav>      
     <!-- Carrusel-->
     <div id="mainSlider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -145,7 +150,6 @@
           <span class="sr-only">Next</span>
         </a>
     </div>
-
     <!-- Division-->
     <div id="separator">
         <div class="content"></div>

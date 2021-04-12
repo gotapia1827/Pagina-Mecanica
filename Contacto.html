@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-    
+<body>    
     <!-- Menu-->
     <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
-        <div class="container-fluid">
+        <div class="container-fluid" data-toggle="modal" data-target="#m1">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="navbar-brand" width="200">
-            </a>            
+              <img src="img/logo.png" alt="navbar-brand" width="200">
+            </a>                 
             <button class="navbar-toggler" 
             type="button"
             data-toggle="collapse"
@@ -28,54 +27,99 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pagos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
-                </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="Servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pagos</a></li>
+                <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+              </ul>                                              
             </div>
             <!--Login-->         
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             <div id="id01" class="modal">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header alert-dark">
-                        <h5 class="modal-title">"Ingresa al Portal"</h5>                        
-                    </div>
-                    <div class="modal-body">
-                      <img src="img/login.jpg" class="img-fluid pb-md-2">
-                      <h6>  </h6>
-                      <form role="form">
-                        <div class="form-group">                         
-                          <label for="">
-                            Usuario:
-                          </label>
-                          <input type="text" class="form-control" id=""/>
-                        </div>
-                        <div class="form-group">                         
-                          <label for="">
-                            Password:
-                          </label>
-                          <input type="password" class="form-control" id=""/>
-                        </div>
-                      </form>                  
-                    </div>
-                    <div class="modal-footer alert-dark">
-                      <button type="submit">Ingresa</button>
-                      <label>
-                        <input type="checkbox" checked="checked" name="remember"> Recuerda me
-                      </label>
-                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header alert-dark">
+                    <h5 class="modal-title">"Ingresa al Portal"</h5>                        
+                  </div>
+                  <div class="modal-body">
+                    <center><img src="img/login.png" class="img-fluid pb-md-2"></center>
+                    <h6>  </h6>
+                    <form role="form">
+                      <div class="form-group">                         
+                        <label for="">
+                          Usuario:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                    </form>                  
+                  </div>
+                  <div class="modal-footer alert-dark">
+                    <button type="submit">Ingresa</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Recuerda me
+                    </label>   
+                    <!-- Cerrar-->
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cerrar</button>
                   </div>
                 </div>
               </div>
-            <!--Login-->
-        </div>
-    </nav>
-    
+            </div>
+            <!--Registrar-->
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registro</button>
+            <div id="id02" class="modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header alert-dark">
+                    <h5 class="modal-title">"Registrate al Portal"</h5>                        
+                  </div>
+                  <div class="modal-body">
+                    <center><img src="img/iniciar.png" class="img-fluid pb-md-2"></center>
+                    <h6>  </h6>
+                    <form role="form">
+                      <div class="form-group">                         
+                        <label for="">
+                          Nombre:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Usuario:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Repetir Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                    </form>                  
+                  </div>
+                  <div class="modal-footer alert-dark">
+                    <button type="submit">Aceptar</button>                   
+                    <!-- Cerrar-->
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>                                
+        </div>        
+    </nav>    
     <!-- Division-->
     <div id="separator">
         <div class="content"></div>
