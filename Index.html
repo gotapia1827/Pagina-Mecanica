@@ -38,40 +38,86 @@
             <!--Login-->         
             <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
             <div id="id01" class="modal">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header alert-dark">
-                        <h5 class="modal-title">"Ingresa al Portal"</h5>                        
-                    </div>
-                    <div class="modal-body">
-                      <img src="img/login.jpg" class="img-fluid pb-md-2">
-                      <h6>  </h6>
-                      <form role="form">
-                        <div class="form-group">                         
-                          <label for="">
-                            Usuario:
-                          </label>
-                          <input type="text" class="form-control" id=""/>
-                        </div>
-                        <div class="form-group">                         
-                          <label for="">
-                            Password:
-                          </label>
-                          <input type="password" class="form-control" id=""/>
-                        </div>
-                      </form>                  
-                    </div>
-                    <div class="modal-footer alert-dark">
-                      <button type="submit">Ingresa</button>
-                      <label>
-                        <input type="checkbox" checked="checked" name="remember"> Recuerda me
-                      </label>
-                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    </div>
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header alert-dark">
+                    <h5 class="modal-title">"Ingresa al Portal"</h5>                        
+                  </div>
+                  <div class="modal-body">
+                    <center><img src="img/login.png" class="img-fluid pb-md-2"></center>
+                    <h6>  </h6>
+                    <form role="form">
+                      <div class="form-group">                         
+                        <label for="">
+                          Usuario:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                    </form>                  
+                  </div>
+                  <div class="modal-footer alert-dark">
+                    <button type="submit">Ingresa</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Recuerda me
+                    </label>   
+                    <!-- Cerrar-->
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cerrar</button>
                   </div>
                 </div>
               </div>
-            <!--Login-->    
+            </div>
+            <!--Registrar-->
+            <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Registro</button>
+            <div id="id02" class="modal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header alert-dark">
+                    <h5 class="modal-title">"Registrate al Portal"</h5>                        
+                  </div>
+                  <div class="modal-body">
+                    <center><img src="img/iniciar.png" class="img-fluid pb-md-2"></center>
+                    <h6>  </h6>
+                    <form role="form">
+                      <div class="form-group">                         
+                        <label for="">
+                          Nombre:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Usuario:
+                        </label>
+                        <input type="text" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                      <div class="form-group">                         
+                        <label for="">
+                          Repetir Password:
+                        </label>
+                        <input type="password" class="form-control" id=""/>
+                      </div>
+                    </form>                  
+                  </div>
+                  <div class="modal-footer alert-dark">
+                    <button type="submit">Aceptar</button>                   
+                    <!-- Cerrar-->
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>                                
         </div>        
     </nav>
     <!-- Carrusel-->
