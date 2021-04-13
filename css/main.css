@@ -31,3 +31,8 @@ h1,h2,h3,h4,h5, button{
 #footer{
     background-color:#283e63;
 }
+#img01{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
